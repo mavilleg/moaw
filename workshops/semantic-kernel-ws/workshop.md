@@ -314,7 +314,7 @@ var kernel = builder.Build();
 A native function can be called directly from the main program:
 ```csharp
 var timePlugin = new Timeskill(); // instantiate an out-of-the-box plugin
-var daysAgo = time.DaysAgo; // instantiate a native function of this plugin
+var daysAgo = timePlugin.DaysAgo; // instantiate a native function of this plugin
 var dateInAWeek = daysAgo(-7); // call a native function
 ```
 
